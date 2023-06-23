@@ -1,0 +1,105 @@
+package Caffe;
+
+import java.util.Scanner;
+
+public class Material_Facilities {
+	//attributes
+	public String name;
+	public String id;
+	public String dateBuy;
+	public String dateCheck;
+	public String position;
+	
+	//constructor
+	public Material_Facilities() {
+	}
+	
+	//constructor all
+	public Material_Facilities(String name, String id, String dateBuy, String dateCheck, String position) {
+		this.name = name;
+		this.id = id;
+		this.dateBuy = dateBuy;
+		this.dateCheck = dateCheck;
+		this.position = position;
+	}
+	
+	//set attributes
+	
+	public void setname(String name) {
+		this.name = name;
+	}
+	public void setid(String id) {
+		this.id = id;
+	}
+	public void setdateBuy(String dateBuy) {
+		this.dateBuy = dateBuy;
+	}
+	public void setdateCheck(String dateCheck) {
+		this.dateCheck = dateCheck;
+	}
+	public void setposition(String position) {
+		this.position = position;
+	}
+	
+	//set all attributes
+	public void setall(String name, String id, String dateBuy, String dateCheck, String position) {
+		this.name = name;
+		this.id = id;
+		this.dateBuy = dateBuy;
+		this.dateCheck = dateCheck;
+		this.position = position;
+	}
+	
+	//get attributes
+	public String getname() {
+		return this.name;
+	}
+	public String getid() {
+		return this.id;
+	}
+	public String getdateCheck() {
+		return this.dateCheck;
+	}
+	public String getdateBuy() {
+		return this.dateBuy;
+	}
+	public String getposition() {
+		return this.position;
+	}
+	
+	//input
+	public void input() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Import Name: ");
+		this.name = sc.nextLine();
+		
+		System.out.println("Import ID: ");
+		this.id = sc.nextLine();
+		
+		System.out.println("Import Date Buy: ");
+		this.dateBuy = sc.nextLine();
+		
+		System.out.println("Import Date Check: ");
+		this.dateCheck = sc.nextLine();
+		
+		System.out.println("Import Position: ");
+		this.position = sc.nextLine();
+		
+		sc.close();
+	}
+	
+	//output
+	public void output() {
+		System.out.println("Name: " + getname());
+		
+		System.out.println("ID: " + getid());
+		
+		System.out.println("Date Buy: " + getdateBuy());
+		
+		System.out.println("Date Check: " + getdateCheck());
+		
+		System.out.println("Position: " + getposition());
+		
+	}
+}
